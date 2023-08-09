@@ -1,8 +1,18 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block title %} Novidades {% endblock %}
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %} Novidades {% endblock %} 
 {% block conteudo %}
 <section class="flex justify-center items-center min-h-screen bg-gray-100">
-    <h1 class="text-center">Novidades</h1>
+    <div class="flex flex-wrap justify-center">
+        {% for _ in card_range %}
+        <div class="bg-orange-400 rounded-md shadow-lg w-52 h-64 mx-4 my-4">
+            <h1 class="text-white text-center pt-2">Card {{ forloop.counter }}</h1>
+            <img src="{% static 'img/carros.png' %}" alt="carros">
+            <div class="bg-black h-24 rounded-md flex justify-center items-center">
+                <button class="flex mx-auto bg-white rounded-md py-1 px-10 font-semibold hover:bg-gray-300 duration-500"><a href="{% url 'detalhes' id=forloop.counter0 %}">Reservar</a></button>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </section>
-{% endblock %} 
+{% endblock %}

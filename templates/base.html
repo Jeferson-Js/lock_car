@@ -13,24 +13,28 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <script src="http://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="{% static 'js/main.js' %}" defer></script>
   </head>
   <body>
     <header class="flex">
       <nav
         class="flex justify-between items-center p-3 w-full h-16 bg-orange-400 shadow-lg"
       >
-      <span class="flex items-center gap-3">
+        <span class="flex items-center gap-3">
           <a href="{% url 'index' %}">
-              <img
-                src="{% static 'img/python-favicon.png' %}"
-                alt="python-logo"
-                class="h-12"
-                />
-            </a>
-            <h2 class="font-semibold text-xl text-white capitalize">look car</h2>
+            <img
+              src="{% static 'img/python-favicon.png' %}"
+              alt="python-logo"
+              class="h-12"
+            />
+          </a>
+          <h2 class="font-semibold text-xl text-white capitalize">look car</h2>
         </span>
-        <button class="text-white outline-none text-3xl flex items-center lg:hidden" onclick="toggleMenu(this)"><ion-icon name="menu"></ion-icon></button>
+        <button
+          class="text-white outline-none text-3xl flex items-center lg:hidden"
+          onclick="toggleMenu(this)"
+        >
+          <ion-icon name="menu"></ion-icon>
+        </button>
         <ul class="flex items-center gap-3">
           <li
             class="text-white hover:text-black duration-500 lg:text-lg md:text-base text-sm capitalize"
@@ -63,5 +67,6 @@
         <a href="">All rights reserved © Oliveira.js August 2023</a>
       </p>
     </footer>
+    <script src="{% static 'js/main.js' %}"></script>
   </body>
 </html>
