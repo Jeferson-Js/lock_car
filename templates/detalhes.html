@@ -2,7 +2,43 @@
 {% load static %} 
 {% block title %} Detalhes {% endblock %} 
 {% block conteudo %}
-<section class="flex justify-center items-center min-h-screen bg-gray-100">
-  <h1>Detalhes</h1>
+<section class="flex justify-center items-center min-h-screen bg-gray-100 p-1">
+  <div class="max-w-2xl overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <img class="object-cover flex mx-auto w-full h-[23rem]" src="{% static carro.imagem %}" alt="{{ carro.nome }}">
+    <div class="p-6">
+        <div>
+            <span class="text-xs font-medium text-orange-400">{{ carro.grupo }}</span>
+            <a href="#" class="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-white outline-none" tabindex="0" role="link">{{ carro.nome }}</a>
+            <div class="flex justify-center items-center gap-5 mt-2">
+              <div class="bg-orange-400 hover:bg-green-400 font-semibold text-gray-200 hover:text-white duration-500 rounded-md shadow-lg px-8 py-1 flex justify-center items-center gap-2 capitalize cursor-pointer">
+                <img src="{% static carro.portas %}" alt="portas" class="h-5">
+                <p>portas</p>
+              </div>
+              <div class="bg-orange-400 hover:bg-green-400 font-semibold text-gray-200 hover:text-white duration-500 rounded-md shadow-lg px-8 py-1 flex justify-center items-center gap-2 capitalize cursor-pointer">
+                <img src="{% static carro.malas %}" alt="portas" class="h-5">
+                <p>Mala</p>
+              </div>
+              <div class="bg-orange-400 hover:bg-green-400 font-semibold text-gray-200 hover:text-white duration-500 rounded-md shadow-lg px-8 py-1 flex justify-center items-center gap-2 capitalize cursor-pointer">
+                <img src="{% static carro.arcondicionado %}" alt="arcondicionado" class="h-5">
+                <p>arcondicionado</p>
+              </div>
+              <div class="bg-orange-400 hover:bg-green-400 font-semibold text-gray-200 hover:text-white duration-500 rounded-md shadow-lg px-8 py-1 flex justify-center items-center gap-2 capitalize cursor-pointer">
+                <img src="{% static carro.volante %}" alt="volante" class="h-5">
+                <p>Dir.Hidráulica</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <div class="flex items-center">
+                <div class="flex items-center">
+                    <img class="object-cover h-10 rounded-full" src="https://images.unsplash.com/photo-1586287011575-a23134f797f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=48&q=60" alt="Avatar">
+                    <a href="#" class="mx-2 font-semibold text-gray-700 dark:text-gray-200" tabindex="0" role="link">{{ carro.grupo }} </a>
+                </div>
+                <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">21 SEP 2015</span>
+            </div>
+        </div>
+    </div>
+</div>
 </section>
 {% endblock %}

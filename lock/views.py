@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .carros_data import carros_localiza
+
 
 # Create your views here.
 def index(request):
@@ -6,115 +8,6 @@ def index(request):
 
 def novidades(request):
     card_range = range(20)
-    carros_localiza = [
-        {
-            "nome": "Sedan Compacto",
-            "cor": "Prata",
-            "imagem": "img/ARGO.png"
-        },
-        {
-            "nome": "SUV Médio",
-            "cor": "Preto",
-            "imagem": "img/carros.png"
-        },
-        {
-            "nome": "Hatchback Esportivo",
-            "cor": "Vermelho",
-            "imagem": "img/carros.png"
-        },
-        {
-            "nome": "Minivan Familiar",
-            "cor": "Branco",
-            "imagem": "img/carros.png"
-        },
-        {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-         {
-            "nome": "Caminhonete",
-            "cor": "Azul",
-            "imagem": "img/carros.png"
-        },
-        # ... adicione informações de cor e imagem para os outros carros ...
-    ]
-
     return render(request, 'novidades.html', {'card_range': card_range, 'carros_localiza': carros_localiza})
 
 def reservas(request):
@@ -127,8 +20,12 @@ def promocoes(request):
     return render(request, 'promocoes.html')
 
 def detalhes(request, id):
-    card_number = int(id) + 1
-    return render(request, 'detalhes.html', {'id': card_number})
+    
+    id = int(id)
+    carro = carros_localiza[id]
+    return render(request, 'detalhes.html', {'carro': carro, 'carros_localiza': carros_localiza})
+
+
 
 
 def pagina_404(request, exception):

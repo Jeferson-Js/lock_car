@@ -5,13 +5,13 @@
 <section class="flex justify-center items-center min-h-screen bg-gray-100">
     <div class="flex flex-wrap justify-center">
         {% for carro in carros_localiza %}
-<div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto mt-6 mb-5">
+<div class="flex flex-col items-center justify-center w-full max-w-sm mx-auto mt-6 mb-5 p-2">
     <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md">
         <img src="{% static carro.imagem %}" alt="{{ carro.nome }}" />
     </div>
-    <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-orange-400">
+    <div class="w-52 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-orange-400">
         <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
-            {{ carro.nome }}
+            {{ carro.grupo }}
         </h3>
 
         <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
