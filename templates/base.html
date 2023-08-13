@@ -11,7 +11,6 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="{% static 'css/tailwind.css' %}" />
-    <!-- <script src="http://cdn.tailwindcss.com"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.js" integrity="sha512-6m6AtgVSg7JzStQBuIpqoVuGPVSAK5Sp/ti6ySu6AjRDa1pX8mIl1TwP9QmKXU+4Mhq/73SzOk6mbNvyj9MPzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
@@ -57,8 +56,8 @@
                       </button>
   
                       <button type="button" class="flex items-center focus:outline-none" aria-label="toggle profile dropdown">
-                          <div class="w-8 h-8 overflow-hidden border-2 border-gray-400 rounded-full">
-                              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" class="object-cover w-full h-full" alt="avatar">
+                          <div class="w-8 h-8 overflow-hidden border-2 border-white rounded-full">
+                              <img src="{% static 'img/man.png'%}" class="object-cover w-full h-full" alt="avatar">
                           </div>
   
                           <h3 class="mx-2 text-gray-700 dark:text-gray-200 lg:hidden">Khatab wedaa</h3>

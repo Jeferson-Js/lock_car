@@ -40,174 +40,174 @@ carros_localiza = [
         "imagem": "img/POLA.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
-        "cor": "Azul",
+        "grupo": "GRUPO J - VAN",
+        "nome": "Mast",
+        "cor": "Branca",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/van.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
+        "grupo": "GRUPO FX - INTERMEDIÁRIO AUTOMÁTICO",
+        "nome": "PEUA",
         "cor": "Azul",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/PEUA.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
-        "cor": "Azul",
+        "grupo": "GRUPO LE - SUV ESPECIAL",
+        "nome": "Eclipse",
+        "cor": "Perolado",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/ECLI.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
+        "grupo": "GRUPO GR - SUV ELITE",
+        "nome": "Chery Tiggo",
         "cor": "Azul",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/TIGX.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
-        "cor": "Azul",
+        "grupo": "GRUPO FE - EXECUTIVO ELETRICO",
+        "nome": "Bolt Premier",
+        "cor": "Perolado",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/BOLT.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
+        "grupo": "GRUPO T - EXECUTIVO BLINDADO",
+        "nome": "Toyota Corolla",
         "cor": "Azul",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/COLB.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
-        "cor": "Azul",
+        "grupo": "GRUPO TG - SUV BLINDADO",
+        "nome": "EQUINOX",
+        "cor": "Perolada",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/EQBL.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
-        "cor": "Azul",
+        "grupo": "GRUPO R - MINIVAN",
+        "nome": "Fiat Doblo",
+        "cor": "Prata",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/DBLO.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
-        "cor": "Azul",
+        "grupo": "GRUPO RX - MINIVAN ESPECIAL",
+        "nome": "Spin",
+        "cor": "Branco",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/SPIX.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
-        "cor": "Azul",
+        "grupo": "GRUPO V - PICK-UP COM AR",
+        "nome": "Saveiro",
+        "cor": "Branca",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/SAVE.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
-        "cor": "Azul",
+        "grupo": "GRUPO VP - PICK-UP COM AR PLUS",
+        "nome": "Fiat Strada",
+        "cor": "Marron",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/STCD.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
-        "cor": "Azul",
+        "grupo": "GRUPO VD - PICK-UP LUXO 4X4 DIESEL",
+        "nome": "Fiat Toro",
+        "cor": "Marron",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/TO4D.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
+        "grupo": "GRUPO NX - PICK-UP DE LUXO",
+        "nome": "Fiat Toro",
         "cor": "Azul",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/TORA.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
-        "cor": "Azul",
+        "grupo": "GRUPO U - FURGÃO",
+        "nome": "Fifo",
+        "cor": "Branco",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/FIFO.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
-        "cor": "Azul",
+        "grupo": "GRUPO UF - FURGÃO INTERMEDIÁRIO",
+        "nome": "Expc",
+        "cor": "Branco",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/EXPC.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
-        "cor": "Azul",
+        "grupo": "GRUPO US - FURGÃO ESPECIAL",
+        "nome": "Boxr",
+        "cor": "Branca",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/BOXR.png"
     },
     {
-        "grupo": "Caminhonete",
-        "nome": "Duster",
-        "cor": "Azul",
+        "grupo": "GRUPO P - 4X4 ESPECIAL",
+        "nome": "From",
+        "cor": "Vermelha",
         "portas": "img/door.png",
         "malas": "img/baggage.png",
         "arcondicionado": "img/arfrio.png",
         "volante": "img/volante.png",
-        "imagem": "img/MOBI.png"
+        "imagem": "img/FRON.png"
     },
 ]
 

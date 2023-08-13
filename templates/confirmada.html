@@ -1,15 +1,48 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block title %} Reserva confirmada {% endblock %}
-{% block conteudo %}
-<section class="flex justify-center  min-h-screen bg-gray-100">
-    <div class="grid grid-cols-2 w-full">
-        <div class="flex-grow-0 bg-green-300 w-full h-full">
-            <h1 class="text-3xl text-white lg:text-lg md:text-base text-sm font-semibold text-center animate-bounce pt-5">Reserva confirmada!</h1>
+{% extends 'base.html' %} {% load static %} {% block title %} Reserva confirmada
+{% endblock %} {% block conteudo %}
+<section class="flex justify-center min-h-screen bg-gray-100">
+  <div class="grid lg:grid-cols-2 grid-cols-1 w-full">
+    <div class="flex-grow-0 bg-green-300 w-full h-full">
+      <h1
+        class="text-white lg:text-lg md:text-base text-sm font-semibold text-center animate-pulse pt-5"
+      >
+        Reserva confirmada!
+      </h1>
+      <div class="w-full h-[43rem] flex justify-center pt-10">
+        {% for user in usuario %}
+        <div class="m-2">
+          <img
+            src="{% static user.avatar %}"
+            alt="{{ user.nome }}"
+            class="flex-shrink-0 flex-grow-0 w-40 h-40"
+          />
+          <h1 class="text-center bg-white rounded-md py-1 mt-2 shadow-lg">
+            #{{ user.nome }}
+          </h1>
+          <h2 class="text-center mt-2">{{ user.cidade }}</h2>
+          <h2 class="text-center mt-2">{{ data_atual }}</h2>
+          <h2 class="text-center mt-2">{{ hora_atual }}</h2>
+          {% if cidade_info %}
+        <p class="text-center mt-2">Cidade: {{ cidade_info.nome }}</p>
+        <p class="text-center mt-2">Estado: {{ cidade_info.estado }}</p>
+        <p class="text-center mt-2">País: {{ cidade_info.pais }}</p>
+        {% else %}
+        <p class="text-center mt-2">
+          Não foi possível encontrar informações da cidade.
+        </p>
+        {% endif %}
         </div>
-        <div class="bg-gray-200 w-full h-full flex justify-center items-center flex-shrink-0">
-            <img src="{% static 'img/MOBI.png' %}" alt="mobi">
-        </div>
+        {% endfor %} 
+      </div>
     </div>
+    <div
+      class="bg-gray-200 w-full h-full flex justify-center items-center flex-shrink mx-auto"
+    >
+    <div class="flex-shrink-0 translate-x-2">
+        <img src="{% static 'img/MOBI.png' %}" alt="carro">
+    </div>
+    </div>
+  </div>
 </section>
+
 {% endblock %}
