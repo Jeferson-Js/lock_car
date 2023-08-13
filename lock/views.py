@@ -19,12 +19,14 @@ def suporte(request):
 def promocoes(request):
     return render(request, 'promocoes.html')
 
-def detalhes(request, id):
-    
+def detalhes(request, id): 
     id = int(id)
     carro = carros_localiza[id]
     return render(request, 'detalhes.html', {'carro': carro, 'carros_localiza': carros_localiza})
 
+
+def confirmada(request):
+    return render(request, 'confirmada.html')
 
 
 

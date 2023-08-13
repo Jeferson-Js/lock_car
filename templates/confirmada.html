@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Reserva confirmada {% endblock %}
+{% block conteudo %}
+<section class="flex justify-center  min-h-screen bg-gray-100">
+    <div class="grid grid-cols-2 w-full">
+        <div class="flex-grow-0 bg-green-300 w-full h-full">
+            <h1 class="text-3xl text-white lg:text-lg md:text-base text-sm font-semibold text-center animate-bounce pt-5">Reserva confirmada!</h1>
+        </div>
+        <div class="bg-gray-200 w-full h-full flex justify-center items-center flex-shrink-0">
+            <img src="{% static 'img/MOBI.png' %}" alt="mobi">
+        </div>
+    </div>
+</section>
+{% endblock %}

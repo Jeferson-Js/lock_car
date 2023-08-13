@@ -8,6 +8,7 @@ urlpatterns = [
     path('reservas/', views.reservas, name="reservas"),
     path('promocoes/', views.promocoes, name="promocoes"),
     path('detalhes/<int:id>', views.detalhes, name="detalhes"),
+    path('confirmada/', views.confirmada, name="confirmada"),
 ]
 
 
